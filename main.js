@@ -13,7 +13,8 @@ function createWindow() {
       contextIsolation: false, // 보안 설정 비활성화 (초보자용)
       preload: path.join(__dirname, 'preload.js') // preload 경로
     },
-    icon: path.join(__dirname, 'icon.ico')
+    icon: path.join(__dirname, 'icon.ico'),
+    autoHideMenuBar: true, // 메뉴바 자동 숨김
   });
   // 최소 크기 설정 (너비 800px, 높이 600px)
   win.setMinimumSize(800, 600);
