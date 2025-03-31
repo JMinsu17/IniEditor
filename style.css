@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    width: 100%;
+  }
+  
+  #header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  #file-selector {
+    margin-bottom: 10px;
+  }
+  
+  #current-file {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 95%;
+    min-width: 600px;
+    border-collapse: collapse;
+    margin: 20px 20px;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 6px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  td:nth-child(4) {
+    white-space: normal;
+    max-width: 300px;
+    word-wrap: break-word;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  button {
+    background-color: #cccccc;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;    
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button.selected {
+    background-color: #459bf7; /* 선택된 상태: 파란색 */
+    color: white;
+  }
+
+  #saveBtn {
+    padding: 18px 40px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
+  #resetBtn {
+    padding: 18px 40px;
+    background-color: #f44336;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
+  #pathBtn {
+    padding: 5px 20px;
+    font-size: 14px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    white-space: nowrap;
+    margin-left: 5px;
+    width: 150px; /* 가로 길이 늘림 */
+    height: 50px; /* 세로 길이 줄임 */
+  }
+  
+  #language-select {
+    width: 200px; /* 가로 길이 늘림 */
+    height: 50px; /* 세로 길이 줄임 */
+}

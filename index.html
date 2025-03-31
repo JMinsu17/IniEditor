@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GameBalance.ini 편집기</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="header">
+      <button id="pathBtn" onclick="setPath()">경로 설정</button>
+      <h1 id="title">GameBalance.ini 편집기</h1>
+      <select id="language-select" onchange="changeLanguage(this.value)">
+        <option value="ko">한국어</option>
+        <option value="en">English</option>
+        <option value="ar">العربية</option>
+      </select>
+    </div>
+    <div id="file-selector">
+      <button id="lowBtn" onclick="switchFile('low')">Low</button>
+      <button id="mediumBtn" onclick="switchFile('medium')">Medium</button>
+      <button id="highBtn" onclick="switchFile('high')">High</button>
+    </div>
+    <div id="current-file">현재 파일: GameBalance-low.ini</div>
+    <div id="table-container">
+      <div id="content"></div>
+    </div>
+    <div class="button-container">
+      <button id="saveBtn" onclick="saveIni()">저장</button>
+      <button id="resetBtn" onclick="resetIni()">초기화</button>
+    </div>
+    <script src="renderer.js"></script>
+  </body>
+</html>

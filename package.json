@@ -1,0 +1,40 @@
+{
+  "name": "ini-editor",
+  "version": "1.0.1",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^35.1.2",
+    "electron-builder": "^25.1.8",
+    "zip-build": "^1.8.0"
+  },
+  "dependencies": {
+    "electron-log": "^5.3.3",
+    "ini": "^5.0.0"
+  },
+  "build": {
+    "appId": "com.example.inieditor",
+    "productName": "GameBalance Editor",
+    "asar": false,
+    "win": {
+      "target": [
+        "zip"
+      ],
+      "icon": "icon.ico"
+    },
+    "portable": {
+      "artifactName": "GameBalanceEditor.exe"
+    },
+    "files": [
+      "main.js",
+      "index.html",
+      "style.css",
+      "renderer.js",
+      "icon.ico",
+      "path-config.json"
+    ]
+  }
+}
